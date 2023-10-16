@@ -10,10 +10,10 @@ This project is a interpreter for the language brainfuck.  Brainfuck is an esote
 * ### '<'  decreases memory pointer, or moves the pointer to the left 1 block.
 * ### '+'  increases value stored at the block pointed to by the memory pointer
 * ### '-'  decreases value stored at the block pointed to by the memory pointer
-* ### '['  like c while(cur_block_value != 0) loop.
-* ### ']'  if block currently pointed to's value is not zero, jump back to corresponding [
-* ### ','  like c getchar(). input 1 character.
-* ### '.'  like c putchar(). print 1 character to the console
+* ### '['  defines the beginning of a loop block
+* ### ']'  if block currently pointed to's value is not zero, jump back to corresponding loop entry
+* ### ','  input 1 character into the current block pointed to by the memory pointer.
+* ### '.'  print 1 character to the console from the current block pointed to by the memory pointer.
 
 
 ### [Included in hello_world.bf is hello world written in brainfuck](/hello_world.bf)
