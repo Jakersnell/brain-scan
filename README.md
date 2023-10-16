@@ -11,3 +11,5 @@ This project is a interpreter for the language brainfuck.  Brainfuck is an esote
 * ### ] = if block currently pointed to's value is not zero, jump back to corresponding [
 * ### , = like c getchar(). input 1 character.
 * ### . = like c putchar(). print 1 character to the console
+
+## Included in hello_world.bf is hello world written in brainfuck
