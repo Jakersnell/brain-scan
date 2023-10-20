@@ -61,7 +61,6 @@ fn main() {
     }
 }
 
-// Interpreter struct
 struct Interpreter {
     mem: [u8; MEM_SIZE],
     current_value: u8,
@@ -88,9 +87,8 @@ impl Interpreter {
         loop {
             token = self.tokens[self.index];
 
-
             match token {
-                '\n' | '\t' | ' ' => {},
+                '\n' | '\t' | ' ' => {}
 
                 '>' => self.increment_pointer(),
                 '<' => self.decrement_pointer(),
@@ -113,12 +111,10 @@ impl Interpreter {
             if self.index >= self.tokens.len() {
                 break;
             }
-
         }
         println!();
         Ok(())
     }
-
 
     // Pointer manipulation methods
     pub fn increment_pointer(&mut self) {
